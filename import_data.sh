@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # This script is for importing specimen test records
 # in JSON format into the NBA. Argument: filename of
