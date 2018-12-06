@@ -16,16 +16,18 @@ mm <- MultiMediaObject$new()
 mm$fromJSONString(str_mm)
 
 sp$id <- NULL
+mm$id <- NULL
 
 filenr <- 1
 for (i in 1:20000000) {
-
+    
+    
     ## Specimen record
     current.id <- paste0("TEST.", i, ".tt")
     sp$unitID <- current.id
     sp$sourceSystemId=paste0("TEST/", i)
     sp$unitGUID <- paste0("http://data.biodiversitydata.nl/naturalis/specimen/TEST/", current.id)
-    sp$collectionType <- "testset_large"  
+    sp$collectionType <- "Observations"  
     sp$assemblageID <- paste0(i, "@OBS")
     sp$sourceSystem$code <- "OBS"
     sp$sourceSystem$name <- "Observation.org - Nature observations"
@@ -57,17 +59,16 @@ for (i in 1:20000000) {
 
     ## Multimedia record
     mm$unitID <- current.id
-    mm$collectionType <- "testset_large"  
+    mm$collectionType <- "Observations"  
     mm$associatedSpecimenReference <- current.id
     mm$gatheringEvents <- list(sp$gatheringEvent)
-    mm$sourceSystemId <- i
+    mm$sourceSystemId <- as.character(i)
     mm$unitID <- paste0("OBS.", i, "_img")
     sa <- ServiceAccessPoint$new()
     sa$format <- "image/jpeg"
     sa$variant <- "Best Quality"
     sa$accessUri <- paste0("https://observation.org/photo/", i, ".jpg")
-    mm$serviceAccessPoints <- list(sa)
-    
+    mm$serviceAccessPoints <- list(sa)    
     cat('{"index":{}}\n', append=TRUE, file=paste0('specimen-', filenr, '.json'))
     cat('{"index":{}}\n', append=TRUE, file=paste0('multimedia-', filenr, '.json'))
     cat(sp$toJSONString(pretty=FALSE), "\n", append=TRUE, file=paste0('specimen-', filenr, '.json'))
@@ -75,5 +76,8 @@ for (i in 1:20000000) {
     
     if (i%%50000 == 0) {
         filenr <- filenr + 1    
+	cat("Wrote set #", filenr, " to file")
     }
 }
+
+
