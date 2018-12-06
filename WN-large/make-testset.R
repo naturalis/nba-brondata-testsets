@@ -3,7 +3,7 @@ library('lexicon')
 library('countrycode')
 set.seed(111)
 
-filename_sp<- 'testrecord.json'
+filename_sp<- 'testrecord-specimen.json'
 str_sp <- readChar(filename_sp, file.info(filename_sp)$size)
 
 filename_mm<- 'testrecord-multimedia.json'
@@ -23,11 +23,14 @@ for (i in 1:20000000) {
     ## Specimen record
     current.id <- paste0("TEST.", i, ".tt")
     sp$unitID <- current.id
-    sp$sourceSystemId=paste0("TEST/", current.id)
+    sp$sourceSystemId=paste0("TEST/", i)
     sp$unitGUID <- paste0("http://data.biodiversitydata.nl/naturalis/specimen/TEST/", current.id)
     sp$collectionType <- "testset_large"  
-    sp$assemblageID <- paste0(i, "@BRAHMS")
-
+    sp$assemblageID <- paste0(i, "@OBS")
+    sp$sourceSystem$code <- "OBS"
+    sp$sourceSystem$name <- "Observation.org - Nature observations"
+    
+    
     ## put some random stuff in there!
     last <- sample(freq_last_names$Surname, 1)
     first <- sample(freq_first_names$Name, 1)
@@ -39,7 +42,9 @@ for (i in 1:20000000) {
     sp$gatheringEvent$worldRegion <- continent
     sp$gatheringEvent$continent <- continent
     sp$gatheringEvent$country <- country
-    sp$gatheringEvent$gatheringPersons[[1]]$fullName <- paste0(last, ", ", first, " ", second)
+    p <- Person$new()
+    p$fullName <- paste0(last, ", ", first, " ", second)
+    sp$gatheringEvent$gatheringPersons <- list(p)
 
     str <- sample(sw_jockers, 1)
     str2 <- sample(sw_fry_1000, 1)
@@ -53,9 +58,15 @@ for (i in 1:20000000) {
     ## Multimedia record
     mm$unitID <- current.id
     mm$collectionType <- "testset_large"  
-    mm$associatedSpecimenReference <- paste0(current.id, "@BRAHMS")
+    mm$associatedSpecimenReference <- current.id
     mm$gatheringEvents <- list(sp$gatheringEvent)
-    mm$serviceAccessPoints[[1]]$accessUri <- paste0("http://data.biodiversitydata.nl/naturalis/specimen/TEST/", current.id)
+    mm$sourceSystemId <- i
+    mm$unitID <- paste0("OBS.", i, "_img")
+    sa <- ServiceAccessPoint$new()
+    sa$format <- "image/jpeg"
+    sa$variant <- "Best Quality"
+    sa$accessUri <- paste0("https://observation.org/photo/", i, ".jpg")
+    mm$serviceAccessPoints <- list(sa)
     
     cat('{"index":{}}\n', append=TRUE, file=paste0('specimen-', filenr, '.json'))
     cat('{"index":{}}\n', append=TRUE, file=paste0('multimedia-', filenr, '.json'))
