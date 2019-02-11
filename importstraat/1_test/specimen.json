@@ -1,0 +1,1211 @@
+[
+  {
+    "sourceSystem": {
+      "code": ["XC"],
+      "name": ["Xeno-canto.org - Bird sounds"]
+    },
+    "sourceSystemId": ["200383"],
+    "id": ["200383@XC"],
+    "unitID": ["XC200383"],
+    "unitGUID": ["http://data.biodiversitydata.nl/xeno-canto/observation/XC200383"],
+    "sourceInstitutionID": ["Stichting Xeno-canto voor Natuurgeluiden"],
+    "sourceID": ["Xeno-canto"],
+    "owner": ["Stijn Cooleman"],
+    "licenseType": ["Copyright"],
+    "license": ["CC BY-NC"],
+    "recordBasis": ["HumanObservation"],
+    "collectionType": ["Bird sounds"],
+    "notes": ["Recorded exceptionally with Olympus digital rec. VN-712PC (without external mic.)  bird-seen:yes  playback-used:no"],
+    "objectPublic": [true],
+    "gatheringEvent": {
+      "country": ["Indonesia"],
+      "locality": ["Gunung Halimun NP, West Java"],
+      "dateTimeBegin": ["2014-09-03T08:54:00+0000"],
+      "dateTimeEnd": ["2014-09-03T08:54:00+0000"],
+      "altitude": ["1300 m"],
+      "gatheringPersons": [
+        {
+          "fullName": "Stijn Cooleman"
+        }
+      ],
+      "siteCoordinates": [
+        {
+          "longitudeDecimal": 106.5182,
+          "latitudeDecimal": -6.7461
+        }
+      ],
+      "associatedTaxa": [
+        {
+          "name": "Alcippe pyrrhoptera",
+          "relationType": "has background sounds"
+        }
+      ]
+    },
+    "identifications": [
+      {
+        "taxonRank": "species",
+        "scientificName": {
+          "fullScientificName": "Arachnothera affinis",
+          "genusOrMonomial": "Arachnothera",
+          "specificEpithet": "affinis"
+        },
+        "defaultClassification": {
+          "family": "Nectariniidae",
+          "genus": "updated_genus"
+        },
+        "vernacularNames": [
+          {
+            "name": "Streaky-breasted Spiderhunter",
+            "language": "English"
+          }
+        ],
+        "preferred": true
+      }
+    ],
+    "associatedMultiMediaUris": [
+      {
+        "accessUri": "https://www.xeno-canto.org/sounds/uploaded/ACTUZNYJOG/XC200383-Streaky-breasted-Spiderhunter_Halimun_2014-09-03_0854_SC.mp3",
+        "format": "audio/mp3",
+        "variant": "ac:BestQuality"
+      },
+      {
+        "accessUri": "https://www.xeno-canto.org/sounds/uploaded/ACTUZNYJOG/ffts/XC200383-large.png",
+        "format": "image/png",
+        "variant": "ac:MediumQuality"
+      }
+    ]
+  },
+  {
+    "sourceSystem": {
+      "code": ["XC"],
+      "name": ["Xeno-canto.org - Bird sounds"]
+    },
+    "sourceSystemId": ["213830"],
+    "id": ["213830@XC"],
+    "unitID": ["XC213830"],
+    "unitGUID": ["http://data.biodiversitydata.nl/xeno-canto/observation/XC213830"],
+    "sourceInstitutionID": ["Stichting Xeno-canto voor Natuurgeluiden"],
+    "sourceID": ["Xeno-canto"],
+    "owner": ["Stijn Cooleman"],
+    "licenseType": ["Copyright"],
+    "license": ["CC BY-NC"],
+    "recordBasis": ["HumanObservation"],
+    "collectionType": ["Bird sounds"],
+    "notes": ["same bird as on XC213827 & XC213831  bird-seen:yes  playback-used:yes"],
+    "objectPublic": [true],
+    "gatheringEvent": {
+      "country": ["Indonesia"],
+      "locality": ["Way Titias, Bukit Barisan Selatan NP, Lampung, Sumatra"],
+      "dateTimeBegin": ["2014-07-17T16:48:00+0000"],
+      "dateTimeEnd": ["2014-07-17T16:48:00+0000"],
+      "altitude": ["700 m"],
+      "gatheringPersons": [
+        {
+          "fullName": "Stijn Cooleman"
+        }
+      ],
+      "siteCoordinates": [
+        {
+          "longitudeDecimal": 104.0258,
+          "latitudeDecimal": -5.0685
+        }
+      ]
+    },
+    "identifications": [
+      {
+        "taxonRank": "subspecies",
+        "scientificName": {
+          "fullScientificName": "Cyornis concretus concretus",
+          "genusOrMonomial": "Cyornis",
+          "specificEpithet": "concretus",
+          "infraspecificEpithet": "concretus"
+        },
+        "defaultClassification": {
+          "family": "Muscicapidae",
+          "genus": "updated_genus"
+        },
+        "vernacularNames": [
+          {
+            "name": "White-tailed Flycatcher",
+            "language": "English"
+          }
+        ],
+        "preferred": true
+      }
+    ],
+    "associatedMultiMediaUris": [
+      {
+        "accessUri": "https://www.xeno-canto.org/sounds/uploaded/ACTUZNYJOG/XC213830-White-tailed-Flycatcher_WayTitias-Sumatra_2014-07-17_1648_%2BPB_SC.mp3",
+        "format": "audio/mp3",
+        "variant": "ac:BestQuality"
+      },
+      {
+        "accessUri": "https://www.xeno-canto.org/sounds/uploaded/ACTUZNYJOG/ffts/XC213830-large.png",
+        "format": "image/png",
+        "variant": "ac:MediumQuality"
+      }
+    ]
+  },
+  {
+    "sourceSystem": {
+      "code": ["XC"],
+      "name": ["Xeno-canto.org - Bird sounds"]
+    },
+    "sourceSystemId": ["144"],
+    "id": ["144@XC"],
+    "unitID": ["XC144"],
+    "unitGUID": ["http://data.biodiversitydata.nl/xeno-canto/observation/XC144"],
+    "sourceInstitutionID": ["Stichting Xeno-canto voor Natuurgeluiden"],
+    "sourceID": ["Xeno-canto"],
+    "owner": ["Willem-Pier Vellinga"],
+    "licenseType": ["Copyright"],
+    "license": ["CC BY-NC"],
+    "recordBasis": ["HumanObservation"],
+    "collectionType": ["Bird sounds"],
+    "objectPublic": [true],
+    "gatheringEvent": {
+      "country": ["Peru"],
+      "locality": ["Atalaya, Leimebamba, Amazonas"],
+      "altitude": ["3400 m"],
+      "gatheringPersons": [
+        {
+          "fullName": "Willem-Pier Vellinga"
+        }
+      ],
+      "siteCoordinates": [
+        {
+          "longitudeDecimal": -77.7334,
+          "latitudeDecimal": -6.8167
+        }
+      ]
+    },
+    "identifications": [
+      {
+        "taxonRank": "species",
+        "scientificName": {
+          "fullScientificName": "Scytalopus acutirostris",
+          "genusOrMonomial": "Scytalopus",
+          "specificEpithet": "acutirostris"
+        },
+        "defaultClassification": {
+          "family": "Rhinocryptidae",
+          "genus": "updated_genus"
+        },
+        "vernacularNames": [
+          {
+            "name": "Tschudi's Tapaculo",
+            "language": "English"
+          }
+        ],
+        "preferred": true
+      }
+    ],
+    "associatedMultiMediaUris": [
+      {
+        "accessUri": "https://www.xeno-canto.org/sounds/uploaded/AEFZWKWLMO/disk2nr54acutirostris.mp3",
+        "format": "audio/mp3",
+        "variant": "ac:BestQuality"
+      },
+      {
+        "accessUri": "https://www.xeno-canto.org/sounds/uploaded/AEFZWKWLMO/ffts/XC144-large.png",
+        "format": "image/png",
+        "variant": "ac:MediumQuality"
+      }
+    ]
+  },
+  {
+    "sourceSystem": {
+      "code": ["XC"],
+      "name": ["Xeno-canto.org - Bird sounds"]
+    },
+    "sourceSystemId": ["150"],
+    "id": ["150@XC"],
+    "unitID": ["XC150"],
+    "unitGUID": ["http://data.biodiversitydata.nl/xeno-canto/observation/XC150"],
+    "sourceInstitutionID": ["Stichting Xeno-canto voor Natuurgeluiden"],
+    "sourceID": ["Xeno-canto"],
+    "owner": ["Willem-Pier Vellinga"],
+    "licenseType": ["Copyright"],
+    "license": ["CC BY-NC"],
+    "recordBasis": ["HumanObservation"],
+    "collectionType": ["Bird sounds"],
+    "notes": ["subspecies presumed"],
+    "objectPublic": [true],
+    "gatheringEvent": {
+      "country": ["Peru"],
+      "locality": ["Quintecocha, Leimebamba, Amazonas"],
+      "altitude": ["3200 m"],
+      "gatheringPersons": [
+        {
+          "fullName": "Willem-Pier Vellinga"
+        }
+      ],
+      "siteCoordinates": [
+        {
+          "longitudeDecimal": -77.7,
+          "latitudeDecimal": -6.8583
+        }
+      ]
+    },
+    "identifications": [
+      {
+        "taxonRank": "subspecies",
+        "scientificName": {
+          "fullScientificName": "Grallaria rufula obscura",
+          "genusOrMonomial": "Grallaria",
+          "specificEpithet": "rufula",
+          "infraspecificEpithet": "obscura"
+        },
+        "defaultClassification": {
+          "family": "Grallariidae",
+          "genus": "updated_genus"
+        },
+        "vernacularNames": [
+          {
+            "name": "Rufous Antpitta",
+            "language": "English"
+          }
+        ],
+        "preferred": true
+      }
+    ],
+    "associatedMultiMediaUris": [
+      {
+        "accessUri": "https://www.xeno-canto.org/sounds/uploaded/AEFZWKWLMO/disk2nr53rufula.mp3",
+        "format": "audio/mp3",
+        "variant": "ac:BestQuality"
+      },
+      {
+        "accessUri": "https://www.xeno-canto.org/sounds/uploaded/AEFZWKWLMO/ffts/XC150-large.png",
+        "format": "image/png",
+        "variant": "ac:MediumQuality"
+      }
+    ]
+  },
+  {
+    "sourceSystem": {
+      "code": ["XC"],
+      "name": ["Xeno-canto.org - Bird sounds"]
+    },
+    "sourceSystemId": ["188"],
+    "id": ["188@XC"],
+    "unitID": ["XC188"],
+    "unitGUID": ["http://data.biodiversitydata.nl/xeno-canto/observation/XC188"],
+    "sourceInstitutionID": ["Stichting Xeno-canto voor Natuurgeluiden"],
+    "sourceID": ["Xeno-canto"],
+    "owner": ["Willem-Pier Vellinga"],
+    "licenseType": ["Copyright"],
+    "license": ["CC BY-NC"],
+    "recordBasis": ["HumanObservation"],
+    "collectionType": ["Bird sounds"],
+    "notes": ["dawn.  .  presumed Masked Flowerpiercer at: 0:07.7 , 0:16.3 , 0:31.2 ."],
+    "objectPublic": [true],
+    "gatheringEvent": {
+      "country": ["Peru"],
+      "locality": ["El Toldo, Ayabaca, Piura"],
+      "altitude": ["2800 m"],
+      "gatheringPersons": [
+        {
+          "fullName": "Willem-Pier Vellinga"
+        }
+      ],
+      "siteCoordinates": [
+        {
+          "longitudeDecimal": -79.7443,
+          "latitudeDecimal": -4.6476
+        }
+      ],
+      "associatedTaxa": [
+        {
+          "name": "Andigena hypoglauca|Diglossa cyanea",
+          "relationType": "has background sounds"
+        }
+      ]
+    },
+    "identifications": [
+      {
+        "taxonRank": "species",
+        "scientificName": {
+          "fullScientificName": "Penelope barbata",
+          "genusOrMonomial": "Penelope",
+          "specificEpithet": "barbata"
+        },
+        "defaultClassification": {
+          "family": "Cracidae",
+          "genus": "updated_genus"
+        },
+        "vernacularNames": [
+          {
+            "name": "Bearded Guan",
+            "language": "English"
+          }
+        ],
+        "preferred": true
+      }
+    ],
+    "associatedMultiMediaUris": [
+      {
+        "accessUri": "https://www.xeno-canto.org/sounds/uploaded/AEFZWKWLMO/PenBarayabaca2-23dot49.mp3",
+        "format": "audio/mp3",
+        "variant": "ac:BestQuality"
+      },
+      {
+        "accessUri": "https://www.xeno-canto.org/sounds/uploaded/AEFZWKWLMO/ffts/XC188-large.png",
+        "format": "image/png",
+        "variant": "ac:MediumQuality"
+      }
+    ]
+  },
+  {
+    "sourceSystem": {
+      "code": ["XC"],
+      "name": ["Xeno-canto.org - Bird sounds"]
+    },
+    "sourceSystemId": ["208"],
+    "id": ["208@XC"],
+    "unitID": ["XC208"],
+    "unitGUID": ["http://data.biodiversitydata.nl/xeno-canto/observation/XC208"],
+    "sourceInstitutionID": ["Stichting Xeno-canto voor Natuurgeluiden"],
+    "sourceID": ["Xeno-canto"],
+    "owner": ["Willem-Pier Vellinga"],
+    "licenseType": ["Copyright"],
+    "license": ["CC BY-NC"],
+    "recordBasis": ["HumanObservation"],
+    "collectionType": ["Bird sounds"],
+    "objectPublic": [true],
+    "gatheringEvent": {
+      "country": ["Peru"],
+      "locality": ["Paucarillo, rio Orosa, Loreto"],
+      "altitude": ["? m"],
+      "gatheringPersons": [
+        {
+          "fullName": "Willem-Pier Vellinga"
+        }
+      ],
+      "siteCoordinates": [
+        {
+          "longitudeDecimal": -72.4005,
+          "latitudeDecimal": -3.6841
+        }
+      ]
+    },
+    "identifications": [
+      {
+        "taxonRank": "species",
+        "scientificName": {
+          "fullScientificName": "Monasa nigrifrons",
+          "genusOrMonomial": "Monasa",
+          "specificEpithet": "nigrifrons"
+        },
+        "defaultClassification": {
+          "family": "Bucconidae"
+        },
+        "vernacularNames": [
+          {
+            "name": "Black-fronted Nunbird",
+            "language": "English"
+          }
+        ],
+        "preferred": true
+      }
+    ],
+    "associatedMultiMediaUris": [
+      {
+        "accessUri": "https://www.xeno-canto.org/sounds/uploaded/AEFZWKWLMO/MonNigPaucarillo-tot-8-8-96-17dot44.mp3",
+        "format": "audio/mp3",
+        "variant": "ac:BestQuality"
+      },
+      {
+        "accessUri": "https://www.xeno-canto.org/sounds/uploaded/AEFZWKWLMO/ffts/XC208-large.png",
+        "format": "image/png",
+        "variant": "ac:MediumQuality"
+      }
+    ]
+  },
+  {
+    "sourceSystem": {
+      "code": ["XC"],
+      "name": ["Xeno-canto.org - Bird sounds"]
+    },
+    "sourceSystemId": ["238"],
+    "id": ["238@XC"],
+    "unitID": ["XC238"],
+    "unitGUID": ["http://data.biodiversitydata.nl/xeno-canto/observation/XC238"],
+    "sourceInstitutionID": ["Stichting Xeno-canto voor Natuurgeluiden"],
+    "sourceID": ["Xeno-canto"],
+    "owner": ["Willem-Pier Vellinga"],
+    "licenseType": ["Copyright"],
+    "license": ["CC BY-NC"],
+    "recordBasis": ["HumanObservation"],
+    "collectionType": ["Bird sounds"],
+    "notes": ["dawn song"],
+    "objectPublic": [true],
+    "gatheringEvent": {
+      "country": ["Peru"],
+      "locality": ["Bosque de Cuyas, Ayabaca, Piura"],
+      "altitude": ["2500 m"],
+      "gatheringPersons": [
+        {
+          "fullName": "Willem-Pier Vellinga"
+        }
+      ],
+      "siteCoordinates": [
+        {
+          "longitudeDecimal": -79.7443,
+          "latitudeDecimal": -4.6476
+        }
+      ]
+    },
+    "identifications": [
+      {
+        "taxonRank": "species",
+        "scientificName": {
+          "fullScientificName": "Penelope barbata",
+          "genusOrMonomial": "Penelope",
+          "specificEpithet": "barbata"
+        },
+        "defaultClassification": {
+          "family": "Cracidae"
+        },
+        "vernacularNames": [
+          {
+            "name": "Bearded Guan",
+            "language": "English"
+          }
+        ],
+        "preferred": true
+      }
+    ],
+    "associatedMultiMediaUris": [
+      {
+        "accessUri": "https://www.xeno-canto.org/sounds/uploaded/AEFZWKWLMO/PenBarAyabaca2-17dot39.mp3",
+        "format": "audio/mp3",
+        "variant": "ac:BestQuality"
+      },
+      {
+        "accessUri": "https://www.xeno-canto.org/sounds/uploaded/AEFZWKWLMO/ffts/XC238-large.png",
+        "format": "image/png",
+        "variant": "ac:MediumQuality"
+      }
+    ]
+  },
+  {
+    "sourceSystem": {
+      "code": ["XC"],
+      "name": ["Xeno-canto.org - Bird sounds"]
+    },
+    "sourceSystemId": ["5602"],
+    "id": ["5602@XC"],
+    "unitID": ["XC5602"],
+    "unitGUID": ["http://data.biodiversitydata.nl/xeno-canto/observation/XC5602"],
+    "sourceInstitutionID": ["Stichting Xeno-canto voor Natuurgeluiden"],
+    "sourceID": ["Xeno-canto"],
+    "owner": ["Willem-Pier Vellinga"],
+    "licenseType": ["Copyright"],
+    "license": ["CC BY-NC"],
+    "recordBasis": ["HumanObservation"],
+    "collectionType": ["Bird sounds"],
+    "notes": ["scores for double songbursts (first after 25s)"],
+    "objectPublic": [true],
+    "gatheringEvent": {
+      "country": ["Peru"],
+      "locality": ["road to Incahuasi above Moyan, Ferrenafe, Lambayeque"],
+      "dateTimeBegin": ["2006-02-12T06:00:00+0000"],
+      "dateTimeEnd": ["2006-02-12T06:00:00+0000"],
+      "altitude": ["2000 m"],
+      "gatheringPersons": [
+        {
+          "fullName": "Willem-Pier Vellinga"
+        }
+      ],
+      "siteCoordinates": [
+        {
+          "longitudeDecimal": -79.3491,
+          "latitudeDecimal": -6.2331
+        }
+      ],
+      "associatedTaxa": [
+        {
+          "name": "Camptostoma obsoletum",
+          "relationType": "has background sounds"
+        }
+      ]
+    },
+    "identifications": [
+      {
+        "taxonRank": "species",
+        "scientificName": {
+          "fullScientificName": "Diglossa sittoides",
+          "genusOrMonomial": "Diglossa",
+          "specificEpithet": "sittoides"
+        },
+        "defaultClassification": {
+          "family": "Thraupidae"
+        },
+        "vernacularNames": [
+          {
+            "name": "Rusty Flowerpiercer",
+            "language": "English"
+          }
+        ],
+        "preferred": true
+      }
+    ],
+    "associatedMultiMediaUris": [
+      {
+        "accessUri": "https://www.xeno-canto.org/sounds/uploaded/AEFZWKWLMO/Laqui140DigSit.mp3",
+        "format": "audio/mp3",
+        "variant": "ac:BestQuality"
+      },
+      {
+        "accessUri": "https://www.xeno-canto.org/sounds/uploaded/AEFZWKWLMO/ffts/XC5602-large.png",
+        "format": "image/png",
+        "variant": "ac:MediumQuality"
+      }
+    ]
+  },
+  {
+    "sourceSystem": {
+      "code": ["XC"],
+      "name": ["Xeno-canto.org - Bird sounds"]
+    },
+    "sourceSystemId": ["8580"],
+    "id": ["8580@XC"],
+    "unitID": ["XC8580"],
+    "unitGUID": ["http://data.biodiversitydata.nl/xeno-canto/observation/XC8580"],
+    "sourceInstitutionID": ["Stichting Xeno-canto voor Natuurgeluiden"],
+    "sourceID": ["Xeno-canto"],
+    "owner": ["Willem-Pier Vellinga"],
+    "licenseType": ["Copyright"],
+    "license": ["CC BY-NC"],
+    "recordBasis": ["HumanObservation"],
+    "collectionType": ["Bird sounds"],
+    "objectPublic": [true],
+    "gatheringEvent": {
+      "country": ["Peru"],
+      "locality": ["Quebrada Shambo, Zona Reservada Laquipampa, Ferrenafe, Lambayeque"],
+      "dateTimeBegin": ["2006-02-19T06:28:00+0000"],
+      "dateTimeEnd": ["2006-02-19T06:28:00+0000"],
+      "altitude": ["1400 m"],
+      "gatheringPersons": [
+        {
+          "fullName": "Willem-Pier Vellinga"
+        }
+      ],
+      "siteCoordinates": [
+        {
+          "longitudeDecimal": -79.4623,
+          "latitudeDecimal": -6.3014
+        }
+      ],
+      "associatedTaxa": [
+        {
+          "name": "Turdus reevei|Camptostoma obsoletum",
+          "relationType": "has background sounds"
+        }
+      ]
+    },
+    "identifications": [
+      {
+        "taxonRank": "species",
+        "scientificName": {
+          "fullScientificName": "Piranga lutea",
+          "genusOrMonomial": "Piranga",
+          "specificEpithet": "lutea"
+        },
+        "defaultClassification": {
+          "family": "Cardinalidae"
+        },
+        "vernacularNames": [
+          {
+            "name": "Tooth-billed Tanager",
+            "language": "English"
+          }
+        ],
+        "preferred": true
+      }
+    ],
+    "associatedMultiMediaUris": [
+      {
+        "accessUri": "https://www.xeno-canto.org/sounds/uploaded/AEFZWKWLMO/LaquiVIPirFla.mp3",
+        "format": "audio/mp3",
+        "variant": "ac:BestQuality"
+      },
+      {
+        "accessUri": "https://www.xeno-canto.org/sounds/uploaded/AEFZWKWLMO/ffts/XC8580-large.png",
+        "format": "image/png",
+        "variant": "ac:MediumQuality"
+      }
+    ]
+  },
+  {
+    "sourceSystem": {
+      "code": ["XC"],
+      "name": ["Xeno-canto.org - Bird sounds"]
+    },
+    "sourceSystemId": ["8699"],
+    "id": ["8699@XC"],
+    "unitID": ["XC8699"],
+    "unitGUID": ["http://data.biodiversitydata.nl/xeno-canto/observation/XC8699"],
+    "sourceInstitutionID": ["Stichting Xeno-canto voor Natuurgeluiden"],
+    "sourceID": ["Xeno-canto"],
+    "owner": ["Willem-Pier Vellinga"],
+    "licenseType": ["Copyright"],
+    "license": ["CC BY-NC"],
+    "recordBasis": ["HumanObservation"],
+    "collectionType": ["Bird sounds"],
+    "objectPublic": [true],
+    "gatheringEvent": {
+      "country": ["Peru"],
+      "locality": ["Quebrada Negrahuasi, Zona Reservada Laquipampa, Ferrenafe, Lambayeque"],
+      "dateTimeBegin": ["2006-02-12T12:30:00+0000"],
+      "dateTimeEnd": ["2006-02-12T12:30:00+0000"],
+      "altitude": ["650 m"],
+      "gatheringPersons": [
+        {
+          "fullName": "Willem-Pier Vellinga"
+        }
+      ],
+      "siteCoordinates": [
+        {
+          "longitudeDecimal": -79.4848,
+          "latitudeDecimal": -6.3498
+        }
+      ]
+    },
+    "identifications": [
+      {
+        "taxonRank": "species",
+        "scientificName": {
+          "fullScientificName": "Lepidocolaptes souleyetii",
+          "genusOrMonomial": "Lepidocolaptes",
+          "specificEpithet": "souleyetii"
+        },
+        "defaultClassification": {
+          "family": "Furnariidae"
+        },
+        "vernacularNames": [
+          {
+            "name": "Streak-headed Woodcreeper",
+            "language": "English"
+          }
+        ],
+        "preferred": true
+      }
+    ],
+    "associatedMultiMediaUris": [
+      {
+        "accessUri": "https://www.xeno-canto.org/sounds/uploaded/AEFZWKWLMO/negrahuasiIILepSou.mp3",
+        "format": "audio/mp3",
+        "variant": "ac:BestQuality"
+      },
+      {
+        "accessUri": "https://www.xeno-canto.org/sounds/uploaded/AEFZWKWLMO/ffts/XC8699-large.png",
+        "format": "image/png",
+        "variant": "ac:MediumQuality"
+      }
+    ]
+  },
+  {
+    "sourceSystem": {
+      "code": ["XC"],
+      "name": ["Xeno-canto.org - Bird sounds"]
+    },
+    "sourceSystemId": ["23667"],
+    "id": ["23667@XC"],
+    "unitID": ["XC23667"],
+    "unitGUID": ["http://data.biodiversitydata.nl/xeno-canto/observation/XC23667"],
+    "sourceInstitutionID": ["Stichting Xeno-canto voor Natuurgeluiden"],
+    "sourceID": ["Xeno-canto"],
+    "owner": ["Willem-Pier Vellinga"],
+    "licenseType": ["Copyright"],
+    "license": ["CC BY-NC"],
+    "recordBasis": ["HumanObservation"],
+    "collectionType": ["Bird sounds"],
+    "notes": ["I am now assuming this is a duet. When in the field I never realised that."],
+    "objectPublic": [true],
+    "gatheringEvent": {
+      "country": ["Peru"],
+      "locality": ["Bosque protector Pagaibamba, Chotas, Cajamarca"],
+      "dateTimeBegin": ["2008-08-17T06:22:00+0000"],
+      "dateTimeEnd": ["2008-08-17T06:22:00+0000"],
+      "altitude": ["3000 m"],
+      "gatheringPersons": [
+        {
+          "fullName": "Willem-Pier Vellinga"
+        }
+      ],
+      "siteCoordinates": [
+        {
+          "longitudeDecimal": -79.0667,
+          "latitudeDecimal": -6.4334
+        }
+      ]
+    },
+    "identifications": [
+      {
+        "taxonRank": "species",
+        "scientificName": {
+          "fullScientificName": "Cistothorus platensis",
+          "genusOrMonomial": "Cistothorus",
+          "specificEpithet": "platensis"
+        },
+        "defaultClassification": {
+          "family": "Troglodytidae"
+        },
+        "vernacularNames": [
+          {
+            "name": "Grass Wren",
+            "language": "English"
+          }
+        ],
+        "preferred": true
+      }
+    ],
+    "associatedMultiMediaUris": [
+      {
+        "accessUri": "https://www.xeno-canto.org/sounds/uploaded/AEFZWKWLMO/14082008_103GraWrePagaibamba.mp3",
+        "format": "audio/mp3",
+        "variant": "ac:BestQuality"
+      },
+      {
+        "accessUri": "https://www.xeno-canto.org/sounds/uploaded/AEFZWKWLMO/ffts/XC23667-large.png",
+        "format": "image/png",
+        "variant": "ac:MediumQuality"
+      }
+    ]
+  },
+  {
+    "sourceSystem": {
+      "code": ["XC"],
+      "name": ["Xeno-canto.org - Bird sounds"]
+    },
+    "sourceSystemId": ["41667"],
+    "id": ["41667@XC"],
+    "unitID": ["XC41667"],
+    "unitGUID": ["http://data.biodiversitydata.nl/xeno-canto/observation/XC41667"],
+    "sourceInstitutionID": ["Stichting Xeno-canto voor Natuurgeluiden"],
+    "sourceID": ["Xeno-canto"],
+    "owner": ["Willem-Pier Vellinga"],
+    "licenseType": ["Copyright"],
+    "license": ["CC BY-NC"],
+    "recordBasis": ["HumanObservation"],
+    "collectionType": ["Bird sounds"],
+    "notes": ["bird-seen:no  playback-used:no"],
+    "objectPublic": [true],
+    "gatheringEvent": {
+      "country": ["Peru"],
+      "locality": ["Atalaya, Leimebamba, Amazonas"],
+      "dateTimeBegin": ["2002-07-19T09:45:00+0000"],
+      "dateTimeEnd": ["2002-07-19T09:45:00+0000"],
+      "altitude": ["3400 m"],
+      "gatheringPersons": [
+        {
+          "fullName": "Willem-Pier Vellinga"
+        }
+      ],
+      "siteCoordinates": [
+        {
+          "longitudeDecimal": -77.7334,
+          "latitudeDecimal": -6.8167
+        }
+      ],
+      "associatedTaxa": [
+        {
+          "name": "Asthenes fuliginosa",
+          "relationType": "has background sounds"
+        }
+      ]
+    },
+    "identifications": [
+      {
+        "taxonRank": "subspecies",
+        "scientificName": {
+          "fullScientificName": "Scytalopus latrans intermedius",
+          "genusOrMonomial": "Scytalopus",
+          "specificEpithet": "latrans",
+          "infraspecificEpithet": "intermedius"
+        },
+        "defaultClassification": {
+          "family": "Rhinocryptidae"
+        },
+        "vernacularNames": [
+          {
+            "name": "Blackish Tapaculo",
+            "language": "English"
+          }
+        ],
+        "preferred": true
+      }
+    ],
+    "associatedMultiMediaUris": [
+      {
+        "accessUri": "https://www.xeno-canto.org/sounds/uploaded/AEFZWKWLMO/ScuLatInt_Ata_WP_25B_MC.mp3",
+        "format": "audio/mp3",
+        "variant": "ac:BestQuality"
+      },
+      {
+        "accessUri": "https://www.xeno-canto.org/sounds/uploaded/AEFZWKWLMO/ffts/XC41667-large.png",
+        "format": "image/png",
+        "variant": "ac:MediumQuality"
+      }
+    ]
+  },
+  {
+    "sourceSystem": {
+      "code": ["XC"],
+      "name": ["Xeno-canto.org - Bird sounds"]
+    },
+    "sourceSystemId": ["49648"],
+    "id": ["49648@XC"],
+    "unitID": ["XC49648"],
+    "unitGUID": ["http://data.biodiversitydata.nl/xeno-canto/observation/XC49648"],
+    "sourceInstitutionID": ["Stichting Xeno-canto voor Natuurgeluiden"],
+    "sourceID": ["Xeno-canto"],
+    "owner": ["Willem-Pier Vellinga"],
+    "licenseType": ["Copyright"],
+    "license": ["CC BY-NC"],
+    "recordBasis": ["HumanObservation"],
+    "collectionType": ["Bird sounds"],
+    "notes": ["a groups of male and female Eiders bathing dusk"],
+    "objectPublic": [true],
+    "gatheringEvent": {
+      "country": ["Netherlands"],
+      "locality": ["wad bij Lange Paal, Vlieland"],
+      "dateTimeBegin": ["2010-05-01T00:00:00+0000"],
+      "dateTimeEnd": ["2010-05-01T23:59:00+0000"],
+      "altitude": ["0 m"],
+      "gatheringPersons": [
+        {
+          "fullName": "Willem-Pier Vellinga"
+        }
+      ],
+      "siteCoordinates": [
+        {
+          "longitudeDecimal": 5.039,
+          "latitudeDecimal": 53.283
+        }
+      ]
+    },
+    "identifications": [
+      {
+        "taxonRank": "species",
+        "scientificName": {
+          "fullScientificName": "Somateria mollissima",
+          "genusOrMonomial": "Somateria",
+          "specificEpithet": "mollissima"
+        },
+        "defaultClassification": {
+          "family": "Anatidae"
+        },
+        "vernacularNames": [
+          {
+            "name": "Common Eider",
+            "language": "English"
+          }
+        ],
+        "preferred": true
+      }
+    ],
+    "associatedMultiMediaUris": [
+      {
+        "accessUri": "https://www.xeno-canto.org/sounds/uploaded/AEFZWKWLMO/29122009_021_Wad_bathing_Eiders.mp3",
+        "format": "audio/mp3",
+        "variant": "ac:BestQuality"
+      },
+      {
+        "accessUri": "https://www.xeno-canto.org/sounds/uploaded/AEFZWKWLMO/ffts/XC49648-large.png",
+        "format": "image/png",
+        "variant": "ac:MediumQuality"
+      }
+    ]
+  },
+  {
+    "sourceSystem": {
+      "code": ["XC"],
+      "name": ["Xeno-canto.org - Bird sounds"]
+    },
+    "sourceSystemId": ["49753"],
+    "id": ["49753@XC"],
+    "unitID": ["XC49753"],
+    "unitGUID": ["http://data.biodiversitydata.nl/xeno-canto/observation/XC49753"],
+    "sourceInstitutionID": ["Stichting Xeno-canto voor Natuurgeluiden"],
+    "sourceID": ["Xeno-canto"],
+    "owner": ["Willem-Pier Vellinga"],
+    "licenseType": ["Copyright"],
+    "license": ["CC BY-NC"],
+    "recordBasis": ["HumanObservation"],
+    "collectionType": ["Bird sounds"],
+    "notes": ["codename individual LP10 evening"],
+    "objectPublic": [true],
+    "gatheringEvent": {
+      "country": ["Netherlands"],
+      "locality": ["Lange Paal, Vlieland"],
+      "dateTimeBegin": ["2010-05-02T00:00:00+0000"],
+      "dateTimeEnd": ["2010-05-02T23:59:00+0000"],
+      "altitude": ["0 m"],
+      "gatheringPersons": [
+        {
+          "fullName": "Willem-Pier Vellinga"
+        }
+      ],
+      "siteCoordinates": [
+        {
+          "longitudeDecimal": 5.027,
+          "latitudeDecimal": 53.2828
+        }
+      ],
+      "associatedTaxa": [
+        {
+          "name": "Phylloscopus collybita|Phylloscopus trochilus|Turdus philomelos|Columba palumbus|Fringilla coelebs|Hirundo rustica|Hirundo rustica",
+          "relationType": "has background sounds"
+        }
+      ]
+    },
+    "identifications": [
+      {
+        "taxonRank": "species",
+        "scientificName": {
+          "fullScientificName": "Troglodytes troglodytes",
+          "genusOrMonomial": "Troglodytes",
+          "specificEpithet": "troglodytes"
+        },
+        "defaultClassification": {
+          "family": "Troglodytidae"
+        },
+        "vernacularNames": [
+          {
+            "name": "Eurasian Wren",
+            "language": "English"
+          }
+        ],
+        "preferred": true
+      }
+    ],
+    "associatedMultiMediaUris": [
+      {
+        "accessUri": "https://www.xeno-canto.org/sounds/uploaded/AEFZWKWLMO/29122009_013_WK_LP.mp3",
+        "format": "audio/mp3",
+        "variant": "ac:BestQuality"
+      },
+      {
+        "accessUri": "https://www.xeno-canto.org/sounds/uploaded/AEFZWKWLMO/ffts/XC49753-large.png",
+        "format": "image/png",
+        "variant": "ac:MediumQuality"
+      }
+    ]
+  },
+  {
+    "sourceSystem": {
+      "code": ["XC"],
+      "name": ["Xeno-canto.org - Bird sounds"]
+    },
+    "sourceSystemId": ["49824"],
+    "id": ["49824@XC"],
+    "unitID": ["XC49824"],
+    "unitGUID": ["http://data.biodiversitydata.nl/xeno-canto/observation/XC49824"],
+    "sourceInstitutionID": ["Stichting Xeno-canto voor Natuurgeluiden"],
+    "sourceID": ["Xeno-canto"],
+    "owner": ["Willem-Pier Vellinga"],
+    "licenseType": ["Copyright"],
+    "license": ["CC BY-NC"],
+    "recordBasis": ["HumanObservation"],
+    "collectionType": ["Bird sounds"],
+    "notes": ["codename individual LP21"],
+    "objectPublic": [true],
+    "gatheringEvent": {
+      "country": ["Netherlands"],
+      "locality": ["Lange Paal, Vlieland"],
+      "dateTimeBegin": ["2010-05-02T07:30:00+0000"],
+      "dateTimeEnd": ["2010-05-02T07:30:00+0000"],
+      "altitude": ["0 m"],
+      "gatheringPersons": [
+        {
+          "fullName": "Willem-Pier Vellinga"
+        }
+      ],
+      "siteCoordinates": [
+        {
+          "longitudeDecimal": 5.027,
+          "latitudeDecimal": 53.2828
+        }
+      ]
+    },
+    "identifications": [
+      {
+        "taxonRank": "species",
+        "scientificName": {
+          "fullScientificName": "Troglodytes troglodytes",
+          "genusOrMonomial": "Troglodytes",
+          "specificEpithet": "troglodytes"
+        },
+        "defaultClassification": {
+          "family": "Troglodytidae"
+        },
+        "vernacularNames": [
+          {
+            "name": "Eurasian Wren",
+            "language": "English"
+          }
+        ],
+        "preferred": true
+      }
+    ],
+    "associatedMultiMediaUris": [
+      {
+        "accessUri": "https://www.xeno-canto.org/sounds/uploaded/AEFZWKWLMO/29122009_037_WK_LP.mp3",
+        "format": "audio/mp3",
+        "variant": "ac:BestQuality"
+      },
+      {
+        "accessUri": "https://www.xeno-canto.org/sounds/uploaded/AEFZWKWLMO/ffts/XC49824-large.png",
+        "format": "image/png",
+        "variant": "ac:MediumQuality"
+      }
+    ]
+  },
+  {
+    "sourceSystem": {
+      "code": ["XC"],
+      "name": ["Xeno-canto.org - Bird sounds"]
+    },
+    "sourceSystemId": ["49852"],
+    "id": ["49852@XC"],
+    "unitID": ["XC49852"],
+    "unitGUID": ["http://data.biodiversitydata.nl/xeno-canto/observation/XC49852"],
+    "sourceInstitutionID": ["Stichting Xeno-canto voor Natuurgeluiden"],
+    "sourceID": ["Xeno-canto"],
+    "owner": ["Willem-Pier Vellinga"],
+    "licenseType": ["Copyright"],
+    "license": ["CC BY-NC"],
+    "recordBasis": ["HumanObservation"],
+    "collectionType": ["Bird sounds"],
+    "notes": ["codename individual VB4"],
+    "objectPublic": [true],
+    "gatheringEvent": {
+      "country": ["Netherlands"],
+      "locality": ["Vuurtorenbos, Vlieland"],
+      "dateTimeBegin": ["2010-05-02T11:00:00+0000"],
+      "dateTimeEnd": ["2010-05-02T11:00:00+0000"],
+      "altitude": ["0 m"],
+      "gatheringPersons": [
+        {
+          "fullName": "Willem-Pier Vellinga"
+        }
+      ],
+      "siteCoordinates": [
+        {
+          "longitudeDecimal": 5.051,
+          "latitudeDecimal": 53.298
+        }
+      ]
+    },
+    "identifications": [
+      {
+        "taxonRank": "species",
+        "scientificName": {
+          "fullScientificName": "Troglodytes troglodytes",
+          "genusOrMonomial": "Troglodytes",
+          "specificEpithet": "troglodytes"
+        },
+        "defaultClassification": {
+          "family": "Troglodytidae"
+        },
+        "vernacularNames": [
+          {
+            "name": "Eurasian Wren",
+            "language": "English"
+          }
+        ],
+        "preferred": true
+      }
+    ],
+    "associatedMultiMediaUris": [
+      {
+        "accessUri": "https://www.xeno-canto.org/sounds/uploaded/AEFZWKWLMO/29122009_050_WK_VuBo.mp3",
+        "format": "audio/mp3",
+        "variant": "ac:BestQuality"
+      },
+      {
+        "accessUri": "https://www.xeno-canto.org/sounds/uploaded/AEFZWKWLMO/ffts/XC49852-large.png",
+        "format": "image/png",
+        "variant": "ac:MediumQuality"
+      }
+    ]
+  },
+  {
+    "sourceSystem": {
+      "code": ["XC"],
+      "name": ["Xeno-canto.org - Bird sounds"]
+    },
+    "sourceSystemId": ["53750"],
+    "id": ["53750@XC"],
+    "unitID": ["XC53750"],
+    "unitGUID": ["http://data.biodiversitydata.nl/xeno-canto/observation/XC53750"],
+    "sourceInstitutionID": ["Stichting Xeno-canto voor Natuurgeluiden"],
+    "sourceID": ["Xeno-canto"],
+    "owner": ["Willem-Pier Vellinga"],
+    "licenseType": ["Copyright"],
+    "license": ["CC BY-NC"],
+    "recordBasis": ["HumanObservation"],
+    "collectionType": ["Bird sounds"],
+    "objectPublic": [true],
+    "gatheringEvent": {
+      "country": ["Peru"],
+      "locality": ["Bosque Paja Blanca, Chotas, Cajamarca"],
+      "dateTimeBegin": ["2008-08-07T07:17:00+0000"],
+      "dateTimeEnd": ["2008-08-07T07:17:00+0000"],
+      "altitude": ["3000 m"],
+      "gatheringPersons": [
+        {
+          "fullName": "Willem-Pier Vellinga"
+        }
+      ],
+      "siteCoordinates": [
+        {
+          "longitudeDecimal": -79.1167,
+          "latitudeDecimal": -6.3876
+        }
+      ],
+      "associatedTaxa": [
+        {
+          "name": "Pharomachrus auriceps",
+          "relationType": "has background sounds"
+        }
+      ]
+    },
+    "identifications": [
+      {
+        "taxonRank": "subspecies",
+        "scientificName": {
+          "fullScientificName": "Scytalopus latrans subcinereus",
+          "genusOrMonomial": "Scytalopus",
+          "specificEpithet": "latrans",
+          "infraspecificEpithet": "subcinereus"
+        },
+        "defaultClassification": {
+          "family": "Rhinocryptidae"
+        },
+        "vernacularNames": [
+          {
+            "name": "Blackish Tapaculo",
+            "language": "English"
+          }
+        ],
+        "preferred": true
+      }
+    ],
+    "associatedMultiMediaUris": [
+      {
+        "accessUri": "https://www.xeno-canto.org/sounds/uploaded/AEFZWKWLMO/07082008_006_401_ScyLat.mp3",
+        "format": "audio/mp3",
+        "variant": "ac:BestQuality"
+      },
+      {
+        "accessUri": "https://www.xeno-canto.org/sounds/uploaded/AEFZWKWLMO/ffts/XC53750-large.png",
+        "format": "image/png",
+        "variant": "ac:MediumQuality"
+      }
+    ]
+  }
+]
