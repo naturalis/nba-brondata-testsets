@@ -1,5 +1,5 @@
 require('nbaR')
-
+require('httr')
 
 ## dataframe with summary of which is updated, deleted, etc
 ids <- list()
@@ -28,7 +28,7 @@ for (i in seq_along(specimens)) {
 ids$initial <- sapply(specimens, function(x)x$id)
 
 file <- file.path(dir, 'specimen.json')
-cat(jsonlite::toJSON(sapply(specimens, function(x)jsonlite::fromJSON(x$toJSONString())), pretty=TRUE), file=file)
+cat(sapply(specimens, function(x)x$toJSONString(pretty=FALSE)), file=file, sep="\n")
 
 ## multimedia XC (10)
 mc <- MultimediaClient$new()
@@ -40,7 +40,8 @@ res <- mc$query(querySpec=qs)
 multimedias <- lapply(res$content$resultSet, function(x)x$item)
 
 file <- file.path(dir, 'multimedia.json')
-cat(jsonlite::toJSON(sapply(multimedias, function(x)jsonlite::fromJSON(x$toJSONString())), pretty=TRUE), file=file)
+cat(sapply(multimedias, function(x)x$toJSONString(pretty=FALSE)), file=file, sep="\n")
+
 
 ## taxon: whole NSR
 ##system('unzip nsr.json.zip')
@@ -71,7 +72,7 @@ ids$unchanged <- setdiff(ids$initial, c(ids$deleted, ids$updated, ids$new))
 
 ## save specimens test
 file <- file.path(dir, 'specimen.json')
-cat(jsonlite::toJSON(sapply(specimens_test, function(x)jsonlite::fromJSON(x$toJSONString())), pretty=TRUE), file=file)
+cat(sapply(specimens_test, function(x)x$toJSONString(pretty=FALSE)), file=file, sep="\n")
 
 ## write ids to file
 write.table(stack(ids), file.path(dir, 'ids.tsv'), sep='\t', row.names=FALSE, quote=FALSE)
