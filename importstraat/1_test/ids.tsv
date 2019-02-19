@@ -1,31 +1,72 @@
-values	ind
-200383@XC	initial
-213830@XC	initial
-144@XC	initial
-150@XC	initial
-188@XC	initial
-208@XC	initial
-238@XC	initial
-709@XC	initial
-729@XC	initial
-758@XC	initial
-709@XC	deleted
-729@XC	deleted
-758@XC	deleted
-200383@XC	updated
-213830@XC	updated
-144@XC	updated
-150@XC	updated
-188@XC	updated
-5602@XC	new
-8580@XC	new
-8699@XC	new
-23667@XC	new
-41667@XC	new
-49648@XC	new
-49753@XC	new
-49824@XC	new
-49852@XC	new
-53750@XC	new
-208@XC	unchanged
-238@XC	unchanged
+id	status	datatype
+26678@XC	initial	specimen
+26681@XC	initial	specimen
+26682@XC	initial	specimen
+26690@XC	initial	specimen
+26693@XC	initial	specimen
+26756@XC	initial	specimen
+26759@XC	initial	specimen
+26763@XC	initial	specimen
+26854@XC	initial	specimen
+26865@XC	initial	specimen
+26763@XC	deleted	specimen
+26854@XC	deleted	specimen
+26865@XC	deleted	specimen
+26678@XC	updated	specimen
+26681@XC	updated	specimen
+26682@XC	updated	specimen
+26690@XC	updated	specimen
+26693@XC	updated	specimen
+26946@XC	new	specimen
+26957@XC	new	specimen
+26962@XC	new	specimen
+26984@XC	new	specimen
+27011@XC	new	specimen
+27040@XC	new	specimen
+27056@XC	new	specimen
+27058@XC	new	specimen
+27060@XC	new	specimen
+27064@XC	new	specimen
+26756@XC	unchanged	specimen
+26759@XC	unchanged	specimen
+26649_ffts@XC	initial	multimedia
+26684_ffts@XC	initial	multimedia
+26758_ffts@XC	initial	multimedia
+26855_ffts@XC	initial	multimedia
+26866_ffts@XC	initial	multimedia
+26902_ffts@XC	initial	multimedia
+26925_ffts@XC	initial	multimedia
+26926_ffts@XC	initial	multimedia
+26970_ffts@XC	initial	multimedia
+26984_ffts@XC	initial	multimedia
+27010_ffts@XC	initial	multimedia
+27026_ffts@XC	initial	multimedia
+27036_ffts@XC	initial	multimedia
+27050_ffts@XC	initial	multimedia
+27076_ffts@XC	initial	multimedia
+27087_ffts@XC	initial	multimedia
+27105_ffts@XC	initial	multimedia
+27110_ffts@XC	initial	multimedia
+27115_ffts@XC	initial	multimedia
+27153_ffts@XC	initial	multimedia
+26926_ffts@XC	deleted	multimedia
+26970_ffts@XC	deleted	multimedia
+26984_ffts@XC	deleted	multimedia
+26649_ffts@XC	updated	multimedia
+26684_ffts@XC	updated	multimedia
+26758_ffts@XC	updated	multimedia
+26855_ffts@XC	updated	multimedia
+26866_ffts@XC	updated	multimedia
+27026_ffts@XC	new	multimedia
+27036_ffts@XC	new	multimedia
+27050_ffts@XC	new	multimedia
+27076_ffts@XC	new	multimedia
+27087_ffts@XC	new	multimedia
+27105_ffts@XC	new	multimedia
+27110_ffts@XC	new	multimedia
+27115_ffts@XC	new	multimedia
+27153_ffts@XC	new	multimedia
+27176_ffts@XC	new	multimedia
+26902_ffts@XC	unchanged	multimedia
+26925_ffts@XC	unchanged	multimedia
+27010_ffts@XC	unchanged	multimedia
