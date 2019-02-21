@@ -7,6 +7,7 @@ base_url <- "http://145.136.242.164:8080/v2"
 ids <- list()
 ids$specimen <- list()
 ids$multimedia <- list()
+
 ## scenario 1) Update Specimen and Multimedia (without enrichment)
 ##    Start:
 ##           specimen: XC (10)
@@ -41,6 +42,7 @@ qs <- QuerySpec$new(size=20,
                                         operator='EQUALS', value='XC')))
 res <- mc$query(querySpec=qs)
 multimedias <- lapply(res$content$resultSet, function(x)x$item)
+for (m in multimedias) {m$sourceID="Xeno-canto"}
 
 ids$multimedia$initial <- sapply(multimedias, function(x)x$id)
 
@@ -104,6 +106,7 @@ qs <- QuerySpec$new(size=10,
 res <- mc$query(querySpec=qs)
 multimedias <- lapply(res$content$resultSet, function(x)x$item)
 multimedias_test <- c(multimedias_test, multimedias)
+for (m in multimedias_test) {m$sourceID="Xeno-canto"}
 ids$multimedia$new <- sapply(multimedias, function(x)x$id)
 ids$multimedia$unchanged <- setdiff(ids$multimedia$initial, c(ids$multimedia$deleted, ids$multimedia$updated, ids$multimedia$new))
 
