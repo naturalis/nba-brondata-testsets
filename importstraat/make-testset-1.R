@@ -1,7 +1,7 @@
 require('nbaR')
 require('httr')
 
-base_url <- "http://145.136.242.164:8080/v2"
+base_url <- "https://api.biodiversitydata.nl/v2/"
 
 ## dataframe with summary of which is updated, deleted, etc
 ids <- list()
@@ -106,7 +106,8 @@ qs <- QuerySpec$new(size=10,
 res <- mc$query(querySpec=qs)
 multimedias <- lapply(res$content$resultSet, function(x)x$item)
 multimedias_test <- c(multimedias_test, multimedias)
-for (m in multimedias_test) {m$sourceID="Xeno-canto"}
+## for (m in multimedias_test) {m$sourceID="Xeno-canto"}
+
 ids$multimedia$new <- sapply(multimedias, function(x)x$id)
 ids$multimedia$unchanged <- setdiff(ids$multimedia$initial, c(ids$multimedia$deleted, ids$multimedia$updated, ids$multimedia$new))
 
