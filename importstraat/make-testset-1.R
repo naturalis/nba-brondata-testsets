@@ -1,7 +1,8 @@
 require('nbaR')
 require('httr')
+source('utils.R')
 
-base_url <- "https://api.biodiversitydata.nl/v2/"
+base_url <- "https://api.biodiversitydata.nl/v2"
 
 ## dataframe with summary of which is updated, deleted, etc
 ids <- list()
@@ -17,7 +18,8 @@ ids$multimedia <- list()
 
 ## specimen XC (10)
 dir <- "1_start"
-dir.create(dir)
+create_dirs(dir)
+
 sc <- SpecimenClient$new(basePath=base_url)
 res <- sc$query(queryParams=list('sourceSystem.code'='XC'))
 specimens <- lapply(res$content$resultSet, function(x)x$item)
@@ -31,8 +33,10 @@ for (i in seq_along(specimens)) {
 
 ids$specimen$initial <- sapply(specimens, function(x)x$id)
 
-file <- file.path(dir, 'specimen.json')
+
+file <- file.path(paste0(dir, "/xenocanto/specimen/"), 'scenario-1-start.json')
 cat(sapply(specimens, function(x)x$toJSONString(pretty=FALSE)), file=file, sep="\n")
+system(paste0(paste0("touch ", dir, "/xenocanto/specimen/upload_ready")))
 
 ## multimedia XC (20)
 mc <- MultimediaClient$new(basePath=base_url)
@@ -46,19 +50,20 @@ for (m in multimedias) {m$sourceID="Xeno-canto"}
 
 ids$multimedia$initial <- sapply(multimedias, function(x)x$id)
 
-file <- file.path(dir, 'multimedia.json')
+file <- file.path(paste0(dir, "/xenocanto/multimedia/"), 'scenario-1-start.json')
 cat(sapply(multimedias, function(x)x$toJSONString(pretty=FALSE)), file=file, sep="\n")
-
+system(paste0(paste0("touch ", dir, "/xenocanto/multimedia/upload_ready")))
 
 ## taxon: whole NSR
 ##system('unzip nsr.json.zip')
-system(paste('cp nsr.json.zip', dir))
+system(paste0('cp nsr.json ', dir, "/", "nsr/taxon/scenario-1-start.json"))
+system(paste0(paste0("touch ", dir, "/nsr/taxon/upload_ready")))
 
 ##    Test:
 ##           specimen: 5 updated, 2 unchanged, 3 deleted, 10 new
 ##           multimedia: 5 updated, 2 unchanged, 3 deleted, 10 new
 dir <- "1_test"
-dir.create(dir)
+create_dirs(dir)
 
 ## delete 3 specimens
 specimens_test <- specimens[1:7]
@@ -82,8 +87,9 @@ ids$specimen$new <- sapply(specimens, function(x)x$id)
 ids$specimen$unchanged <- setdiff(ids$specimen$initial, c(ids$specimen$deleted, ids$specimen$updated, ids$specimen$new))
 
 ## save specimens test
-file <- file.path(dir, 'specimen.json')
+file <- file.path(dir, "xenocanto/specimen", 'scenario-1-test.json')
 cat(sapply(specimens_test, function(x)x$toJSONString(pretty=FALSE)), file=file, sep="\n")
+system(paste0(paste0("touch ", dir, "/xenocanto/specimen/upload_ready")))
 
 ## delete 3 multimedia
 multimedias_test <- multimedias[1:7]
@@ -111,11 +117,14 @@ multimedias_test <- c(multimedias_test, multimedias)
 ids$multimedia$new <- sapply(multimedias, function(x)x$id)
 ids$multimedia$unchanged <- setdiff(ids$multimedia$initial, c(ids$multimedia$deleted, ids$multimedia$updated, ids$multimedia$new))
 
-
 ## save multimedia
-file <- file.path(dir, 'multimedia.json')
+file <- file.path(dir, "xenocanto/multimedia", 'scenario-1-test.json')
 cat(sapply(multimedias_test, function(x)x$toJSONString(pretty=FALSE)), file=file, sep="\n")
+system(paste0(paste0("touch ", dir, "/xenocanto/multimedia/upload_ready")))
 
+## save taxon
+system(paste0('cp nsr.json ', dir, "/", "nsr/taxon/scenario-1-test.json"))
+system(paste0(paste0("touch ", dir, "/nsr/taxon/upload_ready")))
 
 ## write ids to file
 dfsp <- stack(ids$specimen)

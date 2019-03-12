@@ -1,4 +1,5 @@
 require('nbaR')
+source('utils.R')
 
 
 ids <- list()
@@ -22,9 +23,9 @@ tc <- TaxonClient$new()
 mc <- MultimediaClient$new()
 
 dir <- "2_start"
-dir.create(dir)
+create_dirs(dir)
 dir <- "2_test"
-dir.create(dir)
+create_dirs(dir)
 specimens <- NULL
 taxa <- NULL
 multimedia <- NULL
@@ -38,10 +39,12 @@ multimedia <- NULL
 
 #specimens <- c(specimens, lapply(res$content$resultSet[1:10], function(x)x$item))
 
-sngs <- c("felis catus", "bombus terrestris", "bos taurus", "macropipus depurator")
+## sngs <- c("felis catus", "bombus terrestris", "bos taurus", "macropipus depurator", "turdus fuscescens", "treron pompadora", "turnix nana nana")
+
+sngs <- c("dendrocopos major major","falco vespertinus","oenanthe oenanthe leucorhoa","oenanthe oenanthe oenanthe","fringilla montifringilla","plectrophenax nivalis nivalis","limosa limosa limosa","calidris canutus islandica","anser erythropus","fringilla coelebs coelebs","caracara plancus","falco peregrinus peregrinus","falco naumanni","pernis apivorus","gavia stellata","larus canus canus","uria aalge albionis","uria aalge aalge","vanellus vanellus","tringa totanus robusta","calidris alpina alpina","buteo buteo buteo")
 
 for (sng in sngs) {
-
+    cat("sng : ", sng, "\n")
     ## take specimen matching COL SNG 'bombus terrestris', with some multimedia
     qc <- QueryCondition$new(field="identifications.scientificName.scientificNameGroup",
                              operator="EQUALS",
@@ -51,12 +54,18 @@ for (sng in sngs) {
     qs <- QuerySpec$new(size=10000, conditions=list(qc, qc2))
     res <- sc$query(querySpec=qs)
     cat("Found ", res$content$totalSize, " specimens\n")
-    
-    specimens <- c(specimens, lapply(res$content$resultSet, function(x)x$item))
+    if (res$content$totalSize > 0) {
 
-    ## get the taxa for felis catus from NSR and COL
-    res <- tc$query(queryParams=list("acceptedName.scientificNameGroup"=sng))
-    taxa <- c(taxa, lapply(res$content$resultSet, function(x)x$item))    
+        sp <- lapply(res$content$resultSet, function(x)x$item)
+        if (length(sp) > 10) {
+            sp <- sp[1:10]
+        }
+        specimens <- c(specimens, sp)        
+        ## get the taxa for felis catus from NSR and COL
+        res <- tc$query(queryParams=list("acceptedName.scientificNameGroup"=sng))
+        cat("Found ", res$content$totalSize, " taxa\n")
+        taxa <- c(taxa, lapply(res$content$resultSet, function(x)x$item))
+    }
 }
 
 ## get the multimedia documents associated with our specimens
@@ -78,16 +87,28 @@ for (sp in spec_ids) {
     
 
 ## write specimen to file
-file <- file.path(dir, 'specimen.json')
+file <- file.path(dir, "crs", "specimen", 'scenario-2-test.json')
 cat(sapply(specimens, function(x)x$toJSONString(pretty=FALSE)), file=file, sep="\n")
+system(paste0(paste0("touch ", dir, "/crs/specimen/upload_ready")))
+
+## split taxa in NSR and COL taxa
+taxa_col <- taxa[which(lapply(taxa, function(x)x$sourceSystem$code)=='COL')]
+taxa_nsr <- taxa[which(lapply(taxa, function(x)x$sourceSystem$code)=='NSR')]
 
 ## write taxa to file
-file <- file.path(dir, 'taxa.json')
-cat(sapply(taxa, function(x)x$toJSONString(pretty=FALSE)), file=file, sep="\n")
+file <- file.path(dir, "col", "taxon", "scenario-2-test.json")
+cat(sapply(taxa_col, function(x)x$toJSONString(pretty=FALSE)), file=file, sep="\n")
+system(paste0(paste0("touch ", dir, "/col/taxon/upload_ready")))
+
+file <- file.path(dir, "nsr", "taxon", "scenario-2-test.json")
+cat(sapply(taxa_nsr, function(x)x$toJSONString(pretty=FALSE)), file=file, sep="\n")
+system(paste0(paste0("touch ", dir, "/nsr/taxon/upload_ready")))
+
 
 ## write multimedia to file
-file <- file.path(dir, 'multimedia.json')
+file <- file.path(dir, 'crs', 'multimedia', 'scenario-2-test.json')
 cat(sapply(multimedia, function(x)x$toJSONString(pretty=FALSE)), file=file, sep="\n")
+system(paste0(paste0("touch ", dir, "/crs/multimedia/upload_ready")))
 
 ## extract ids
 ids$specimen$new <- sapply(specimens, function(x)x$id)

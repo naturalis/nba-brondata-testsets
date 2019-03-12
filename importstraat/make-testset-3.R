@@ -1,5 +1,6 @@
 require('nbaR')
 require('httr')
+source('utils.R')
 
 base_url <- "http://145.136.242.167:8080/v2"
 
@@ -20,7 +21,7 @@ tc <- TaxonClient$new(basePath=base_url)
 mc <- MultimediaClient$new()
 
 dir <- "3_start"
-dir.create(dir)
+create_dirs(dir)
 
 specimens <- NULL
 taxa <- NULL
@@ -98,16 +99,25 @@ for (sp in spec_ids) {
 }
 
 ## write specimen to file
-file <- file.path(dir, 'specimen.json')
+file <- file.path(dir, "brahms/specimen", 'scenario-3-start.json')
 cat(sapply(specimens, function(x)x$toJSONString(pretty=FALSE)), file=file, sep="\n")
+system(paste0(paste0("touch ", dir, "/brahms/specimen/upload_ready")))
 
 ## write taxa to file
-file <- file.path(dir, 'taxa.json')
-cat(sapply(taxa, function(x)x$toJSONString(pretty=FALSE)), file=file, sep="\n")
+##file <- file.path(dir, 'taxa.json')
+##cat(sapply(taxa, function(x)x$toJSONString(pretty=FALSE)), file=file, sep="\n")
+
+system(paste0('cp nsr.json ', dir, "/", "nsr/taxon/scenario-3-start.json"))
+system(paste0(paste0("touch ", dir, "/nsr/taxon/upload_ready")))
+
+system(paste0('cp col.json ', dir, "/", "col/taxon/scenario-3-start.json"))
+system(paste0(paste0("touch ", dir, "/col/taxon/upload_ready")))
+
 
 ## write multimedia to file
-file <- file.path(dir, 'multimedia.json')
+file <- file.path(dir, 'brahms/multimedia', 'scenario-3-start.json')
 cat(sapply(multimedia, function(x)x$toJSONString(pretty=FALSE)), file=file, sep="\n")
+system(paste0(paste0("touch ", dir, "/brahms/multimedia/upload_ready")))
 
 ## extract ids
 ids$specimen$initial <- sapply(specimens, function(x)x$id)
@@ -120,7 +130,7 @@ ids$multimedia$initial <- sapply(multimedia, function(x)x$id)
 ##           taxon: NSR, COL, delete 5 records each, update SNGs in 10 records!
 
 dir <- "3_test"
-dir.create(dir)
+create_dirs(dir)
 
 ## update specimens
 specimens_test <- lapply(specimens, function(x){
@@ -150,16 +160,18 @@ taxa_test <- lapply(taxa, function(x){
 ids$taxa$updated <- sapply(taxa_test, function(x)x$id)
 
 ## save specimen
-file <- file.path(dir, 'specimen.json')
+file <- file.path(dir, "brahms/specimen", 'scenario-3-test.json')
 cat(sapply(specimens_test, function(x)x$toJSONString(pretty=FALSE)), file=file, sep="\n")
+system(paste0(paste0("touch ", dir, "/brahms/specimen/upload_ready")))
 
 ## save multimedia
-file <- file.path(dir, 'multimedia.json')
+file <- file.path(dir, "brahms/multimedia", 'scenario-3-test.json')
 cat(sapply(multimedia_test, function(x)x$toJSONString(pretty=FALSE)), file=file, sep="\n")
+system(paste0(paste0("touch ", dir, "/brahms/multimedia/upload_ready")))
 
 ## save taxa
-file <- file.path(dir, 'taxa.json')
-cat(sapply(taxa_test, function(x)x$toJSONString(pretty=FALSE)), file=file, sep="\n")
+##file <- file.path(dir, 'taxa.json')
+##cat(sapply(taxa_test, function(x)x$toJSONString(pretty=FALSE)), file=file, sep="\n")
 
 ## delete 5 taxa from COL and NSR
 delete_col <- sapply(tc$query(queryParams=list(sourceSystem.code="COL"))$content$resultSet[1:5], function(x)x$item$id)
@@ -168,11 +180,12 @@ delete_nsr <- sapply(tc$query(queryParams=list(sourceSystem.code="NSR"))$content
 ids$taxa$deleted <- c(delete_col, delete_nsr)
 
 ## make files with records removed, move to directory and zip!
-system(paste0("grep -v \"", paste(delete_nsr, collapse="\\|"), "\" nsr.json > nsr_test.json && mv nsr_test.json ", dir))
-system(paste0("grep -v \"", paste(delete_col, collapse="\\|"), "\" col.json > col_test.json && mv col_test.json ", dir))
-system(paste0("zip nsr_test.json.zip ", dir, "/nsr_test.json"))
-system(paste0("zip col_test.json.zip ", dir, "/col_test.json"))
-
+system(paste0("grep -v \"", paste(delete_nsr, collapse="\\|"), "\" nsr.json > scenario-3-test.json && mv scenario-3-test.json ", paste0(dir, '/nsr/taxon')))
+system(paste0(paste0("touch ", dir, "/col/taxon/upload_ready")))
+system(paste0("grep -v \"", paste(delete_col, collapse="\\|"), "\" col.json > scenario-3-test.json && mv scenario-3-test.json ", paste0(dir, '/col/taxon')))
+system(paste0(paste0("touch ", dir, "/nsr/taxon/upload_ready")))
+## system(paste0("zip nsr_test.json.zip ", dir, "/nsr_test.json"))
+## system(paste0("zip col_test.json.zip ", dir, "/col_test.json"))
 
 ## write ids to file
 dfsp <- stack(ids$specimen)
